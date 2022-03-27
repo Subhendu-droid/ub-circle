@@ -21,23 +21,4 @@ jobs:
       - run:
           name: Clone private repo
             git clone https://Subhendu-droid :$GIT_TOKEN@github.com/Subhendu-droid/env-file-for-UB PR
-    
-      - run:
-          name: Clone botgram shell-bot repo and Generate config
-          command: |
-            git clone https://github.com/Subhendu-droid/shell-bot --depth 1 shell-bot
-     
-      - run:
-          name: Run the bot
-          command: |
-            sudo bash ultroid.sh
-     
-      - run:
-          name: Circle loop
-          command: |
-            git clone https://github.com/shell-bot-cirrus -b main loop
-            cd loop || exit 1
-            echo $(TZ='Asia/Kolkata' date) >> loop.txt
-            git add loop.txt
-            git commit -m "Workflow : Loop $(TZ='Asia/Kolkata' date)"
-            git push -q https://$GIT_TOKEN@github.com/shell-boy-cirrus HEAD:main
+            pwd
