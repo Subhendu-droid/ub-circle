@@ -11,5 +11,5 @@ task:
 
   
   Build-Env-Setup_script:
-       - apt update && apt upgrade 
+       - apt update && apt upgrade && echo "yes"
        - bash bot.sh
