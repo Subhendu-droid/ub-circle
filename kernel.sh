@@ -2,4 +2,4 @@ git clone https://github.com/Subhendu-droid/android_kernel_asus_X01AD.git -b lin
 cd kernel
 sudo bash x01ad-build.sh
 cd ..
-./transfer wet kernel/out/*.zip
+./transfer wet /tmp/cirrus-ci-build/kernel/out/jarvis-kernel.zip
