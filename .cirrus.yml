@@ -2,11 +2,13 @@ env:
   TZ: Asia/KolKata
 
 task:
-  name: "Ubuntu SSH"
-  container:
-      image: cirrus-images/family/docker-builder
-      cpu: 8
-      memory: 32G
+  compute_engine_instance:
+    image_project: cirrus-images
+    image: family/docker-builder
+    platform: linux
+    cpu: 8
+    memory: 32G
+
   
   Build-Env-Setup_script:
        - apt update && apt upgrade 
