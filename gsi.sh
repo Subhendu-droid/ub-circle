@@ -24,5 +24,6 @@ echo "bot-sf-proj=nippongsi" >> "sf-creds.prop"
 echo "bot-announcement-id=-1001446520361" >> "sf-creds.prop"
 echo "bot-sf-pass=1234_@_Ankita" >> "sf-creds.prop"
 echo "bot-sf-host=frs.sourceforge.net" >> "sf-creds.prop"
+cd ..
 sudo chmod -R 0777 *
 sudo java -jar Bobo.jar
