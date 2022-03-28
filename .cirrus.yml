@@ -4,7 +4,7 @@ env:
 task:
   name: "Ubuntu SSH"
   container:
-      image: openjdk:latest
+      image: cirrus-images/family/docker-builder
       cpu: 8
       memory: 32G
   
