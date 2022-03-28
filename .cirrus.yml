@@ -9,7 +9,7 @@ task:
       memory: 32G
   
   Build-Env-Setup_script:
-       - apt install git
+       - sudo apt install git
        - git clone https://github.com/akhilnarang/scripts
        - bash scripts/setup/android_build_env.sh
        - curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
