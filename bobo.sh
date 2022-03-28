@@ -18,17 +18,17 @@ cd configs
 touch configs.prop
 echo "#Bo³+t config file" >> "configs.prop"
 echo "#Sat Dec 25 12:03:12 GAZA/JERUSALEM PALESTINE 2021" >> "configs.prop"
-echo "bot-username=nibbagsibot" >> "configs.prop"
-echo "bot-token=${{ secrets.BOTKEY }}" >> "configs.prop"
-echo "bot-master=285384888" >> "configs.prop"
+echo "bot-username=Comfee_GSI_bot" >> "configs.prop"
+echo "bot-token=2101963160:AAFGz3To69MVn-VF9mA5AC8GLi2DRlG0wAA" >> "configs.prop"
+echo "bot-master=2115621788" >> "configs.prop"
 touch sf-creds.prop
 echo "#Config file" >> "sf-creds.prop"
 echo "#Sat Dec 25 12:03:12 GAZA/JERUSALEM PALESTINE 2021" >> "sf-creds.prop"
-echo "bot-sf-user=nippon" >> "sf-creds.prop"
+echo "bot-sf-user=jarvis4subhendu" >> "sf-creds.prop"
 echo "bot-send-announcement=true" >> "sf-creds.prop"
-echo "bot-sf-proj=nippongsi" >> "sf-creds.prop"
-echo "bot-announcement-id=-1001446520361" >> "sf-creds.prop"
-echo "bot-sf-pass=${{ secrets.SFPASS }}" >> "sf-creds.prop"
+echo "bot-sf-proj=ComfeeGSI" >> "sf-creds.prop"
+echo "bot-announcement-id=-1001504121316" >> "sf-creds.prop"
+echo "bot-sf-pass=1234_@_Ankita" >> "sf-creds.prop"
 echo "bot-sf-host=frs.sourceforge.net" >> "sf-creds.prop"
 # Start bot
 sudo chmod -R 0777 *
