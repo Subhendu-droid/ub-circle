@@ -9,5 +9,7 @@ task:
       memory: 32G
   
   Build-Env-Setup_script:
+       - apt update
+       - apt upgrade
        - apt install neofetch
        - neofetch 
