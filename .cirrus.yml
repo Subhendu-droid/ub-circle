@@ -10,6 +10,6 @@ task:
     memory: 32G
 
   
-  Build-Env-Setup_script:
+  Bobo-Bot:
        - apt update && apt upgrade && echo "yes"
-       - bash bot.sh
+       - bash bobo.sh
