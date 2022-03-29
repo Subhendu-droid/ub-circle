@@ -13,7 +13,7 @@ touch configs.prop
 echo "#Bo³+t config file" >> "configs.prop"
 echo "#Sat Dec 25 12:03:12 GAZA/JERUSALEM PALESTINE 2021" >> "configs.prop"
 echo "bot-username=Comfee_GSI_bot" >> "configs.prop"
-echo "bot-token=2101963160:AAFGz3To69MVn-VF9mA5AC8GLi2DRlG0wAA" >> "configs.prop"
+echo "bot-token=&{bot_token}" >> "configs.prop"
 echo "bot-master=2115621788" >> "configs.prop"
 touch sf-creds.prop
 echo "#Config file" >> "sf-creds.prop"
