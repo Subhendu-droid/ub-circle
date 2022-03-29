@@ -6,24 +6,3 @@ git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git -b ma
 curl -sL https://git.io/file-transfer | sh
 sudo chmod -R 0777 ErfanGSIs
 sudo bash ErfanGSIs/setup.sh
-java -jar Bobo.jar
-rm -rf configs/configs.prop && rm -rf configs/sf-creds.prop
-cd configs
-touch configs.prop
-echo "#Bo³+t config file" >> "configs.prop"
-echo "#Sat Dec 25 12:03:12 GAZA/JERUSALEM PALESTINE 2021" >> "configs.prop"
-echo "bot-username=Comfee_GSI_bot" >> "configs.prop"
-echo "bot-token=&{bot_token}" >> "configs.prop"
-echo "bot-master=2115621788" >> "configs.prop"
-touch sf-creds.prop
-echo "#Config file" >> "sf-creds.prop"
-echo "#Sat Dec 25 12:03:12 GAZA/JERUSALEM PALESTINE 2021" >> "sf-creds.prop"
-echo "bot-sf-user=jarvis4subhendu" >> "sf-creds.prop"
-echo "bot-send-announcement=true" >> "sf-creds.prop"
-echo "bot-sf-proj=nippongsi" >> "sf-creds.prop"
-echo "bot-announcement-id=-1001446520361" >> "sf-creds.prop"
-echo "bot-sf-pass=1234_@_Ankita" >> "sf-creds.prop"
-echo "bot-sf-host=frs.sourceforge.net" >> "sf-creds.prop"
-cd ..
-sudo chmod -R 0777 *
-sudo java -jar Bobo.jar
