@@ -1,6 +1,6 @@
 env:
   TZ: Asia/KolKata
-  bot_token: "ENCRYPTED[!13b78faf4b4712caa75e6d4fa52ecbc671db5c7399ce6cdb32f1d1956e5a18ff7a474c63b400c7ee2d79240d55cc1e72!]"
+  bot_token: ENCRYPTED[!13b78faf4b4712caa75e6d4fa52ecbc671db5c7399ce6cdb32f1d1956e5a18ff7a474c63b400c7ee2d79240d55cc1e72!]
 
 task:
   compute_engine_instance:
