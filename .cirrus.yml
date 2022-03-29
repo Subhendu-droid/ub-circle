@@ -12,4 +12,4 @@ task:
   
   Build-Env-Setup_script:
        - apt update && apt upgrade && echo "yes"
-       - bash gsi.sh
+       - bash bot.sh
