@@ -1,5 +1,5 @@
 env: 
-  bot_token: ENCRYPTED[!137c114c1bea33de1ef114205abe2fc9f9d1ce3f5fd87eb841892ceaf1ac3fe61291fd554414010be367d01e28fed502!]
+    bot_token: "ENCRYPTED[!137c114c1bea33de1ef114205abe2fc9f9d1ce3f5fd87eb841892ceaf1ac3fe61291fd554414010be367d01e28fed502!]"
 
 task:
   name: "Bobo-Bot"
