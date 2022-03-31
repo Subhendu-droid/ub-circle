@@ -10,5 +10,4 @@ task:
       memory: 32G
 
   Sync_script:
-      - apt install tmate
-      - tmate
+      - bash bot.sh
