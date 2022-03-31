@@ -10,4 +10,4 @@ task:
       memory: 32G
 
   Sync_script:
-      - bash bot.sh
+      - tmate
