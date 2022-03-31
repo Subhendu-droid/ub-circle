@@ -1,44 +1,42 @@
-env:
+ env:
     bot_api: "ENCRYPTED[b16032643ad0994cda4822c9d477956f434278d0f786f8e131b585aa4f8510a11f3cd9f6a66a63568d2cba1c4dde25b4]"
 
-task:
+ task:
   name: Bobo-Bot
-  compute_engine_instance:
-    image_project: cirrus-images
-    image: family/docker-builder
-    platform: linux
+  container:
+    image: openjdk:latest
     cpu: 8
     memory: 32G
 
-  Get all requirements:
-    - apt update && apt upgrade && echo "yes"
-    - sudo -E apt-get -qq update
-    - sudo -E apt-get -qq install bc build-essential zip curl libstdc++6 git wget python gcc clang libssl-dev rsync flex bison ccache openjdk-8-jdk expect neofetch tmux tmate aria2      - git config --global user.name "Subhendu-droid"
-    - git config --global user.email "maharanasubhendu3@gmail.com"
-    - curl -sL https://git.io/file-transfer | sh
-  Clone the tool and setup it:
-    - git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git -b master ErfanGSIs
-    - sudo chmod -R 0777 ErfanGSIs
-    - sudo bash ErfanGSIs/setup.sh
-  Setup Bobo-Bot and configs:
-    - java -jar Bobo.jar
-    - rm -rf configs/configs.prop && rm -rf configs/sf-creds.prop
-    - cd configs
-    - touch configs.prop
-    - echo "#Bo³+t config file" >> "configs.prop"
-    - echo "#Sat Dec 25 12:03:12 GAZA/JERUSALEM PALESTINE 2021" >> "configs.prop"
-    - echo "bot-username=Comfee_GSI_bot" >> "configs.prop"
-    - echo "bot-token=&{bot_token}" >> "configs.prop"
-    - echo "bot-master=2115621788" >> "configs.prop"
-    - touch sf-creds.prop
-    - echo "#Config file" >> "sf-creds.prop"
-    - echo "#Sat Dec 25 12:03:12 GAZA/JERUSALEM PALESTINE 2021" >> "sf-creds.prop"
-    - echo "bot-sf-user=jarvis4subhendu" >> "sf-creds.prop"
-    - echo "bot-send-announcement=true" >> "sf-creds.prop"
-    - echo "bot-sf-proj=nippongsi" >> "sf-creds.prop"
-    - echo "bot-announcement-id=-1001446520361" >> "sf-creds.prop"
-    - echo "bot-sf-pass=1234_@_Ankita" >> "sf-creds.prop"
-    - echo "bot-sf-host=frs.sourceforge.net" >> "sf-creds.prop"
-  Running the bot:
-    - sudo chmod -R 0777 *
-    - sudo java -jar Bobo.jar
+   Get all requirements:
+     - apt update && apt upgrade && echo "yes"
+     - sudo -E apt-get -qq update
+     - sudo -E apt-get -qq install bc build-essential zip curl libstdc++6 git wget python gcc clang libssl-dev rsync flex bison ccache openjdk-8-jdk expect neofetch tmux tmate aria2      - git config --global user.name "Subhendu-droid"
+     - git config --global user.email "maharanasubhendu3@gmail.com"
+     - curl -sL https://git.io/file-transfer | sh
+   Clone the tool and setup it:
+     - git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git -b master ErfanGSIs
+     - sudo chmod -R 0777 ErfanGSIs
+     - sudo bash ErfanGSIs/setup.sh
+   Setup Bobo-Bot and configs:
+     - java -jar Bobo.jar
+     - rm -rf configs/configs.prop && rm -rf configs/sf-creds.prop
+     - cd configs
+     - touch configs.prop
+     - echo "#Bo³+t config file" >> "configs.prop"
+     - echo "#Sat Dec 25 12:03:12 GAZA/JERUSALEM PALESTINE 2021" >> "configs.prop"
+     - echo "bot-username=Comfee_GSI_bot" >> "configs.prop"
+     - echo "bot-token=&{bot_token}" >> "configs.prop"
+     - echo "bot-master=2115621788" >> "configs.prop"
+     - touch sf-creds.prop
+     - echo "#Config file" >> "sf-creds.prop"
+     - echo "#Sat Dec 25 12:03:12 GAZA/JERUSALEM PALESTINE 2021" >> "sf-creds.prop"
+     - echo "bot-sf-user=jarvis4subhendu" >> "sf-creds.prop"
+     - echo "bot-send-announcement=true" >> "sf-creds.prop"
+     - echo "bot-sf-proj=nippongsi" >> "sf-creds.prop"
+     - echo "bot-announcement-id=-1001446520361" >> "sf-creds.prop"
+     - echo "bot-sf-pass=1234_@_Ankita" >> "sf-creds.prop"
+     - echo "bot-sf-host=frs.sourceforge.net" >> "sf-creds.prop"
+   Running the bot:
+     - sudo chmod -R 0777 *
+     - sudo java -jar Bobo.jar
