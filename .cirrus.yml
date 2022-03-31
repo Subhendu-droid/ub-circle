@@ -17,7 +17,7 @@ task:
       - curl -sL https://git.io/file-transfer | sh
 
   Clone-Tool-and-Setup:
-      - git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git -b master ErfanGSIs
+      - git clone --recurse-submodules https://github.com/MinatiScape/ErfanGSIs.git -b master ErfanGSIs
       - sudo chmod -R 0777 ErfanGSIs
       - sudo bash ErfanGSIs/setup.sh
 
