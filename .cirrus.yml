@@ -1,6 +1,6 @@
 env:
   TZ: Asia/KolKata
-  bot_token: ENCRYPTED[!13b78faf4b4712caa75e6d4fa52ecbc671db5c7399ce6cdb32f1d1956e5a18ff7a474c63b400c7ee2d79240d55cc1e72!]
+  bot_token: "ENCRYPTED[!13b78faf4b4712caa75e6d4fa52ecbc671db5c7399ce6cdb32f1d1956e5a18ff7a474c63b400c7ee2d79240d55cc1e72!]"
 
 task:
   compute_engine_instance:
@@ -11,9 +11,20 @@ task:
     memory: 32G
 
   
-  Build-Env-Setup_script:
+  Get all requirements:
        - apt update && apt upgrade && echo "yes"
-       - bash gsi.sh
+       - sudo -E apt-get -qq update
+       - sudo -E apt-get -qq install bc build-essential zip curl libstdc++6 git wget python gcc clang libssl-dev rsync flex bison ccache openjdk-8-jdk expect neofetch tmux tmate aria2
+       - git config --global user.name "Subhendu-droid"
+       - git config --global user.email "maharanasubhendu3@gmail.com"
+       - curl -sL https://git.io/file-transfer | sh
+
+  Clone the tool and setup it:
+       - git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git -b master ErfanGSIs
+       - sudo chmod -R 0777 ErfanGSIs
+       - sudo bash ErfanGSIs/setup.sh
+
+  Setup Bobo-Bot and configs:
        - java -jar Bobo.jar
        - rm -rf configs/configs.prop && rm -rf configs/sf-creds.prop
        - cd configs
@@ -32,6 +43,7 @@ task:
        - echo "bot-announcement-id=-1001446520361" >> "sf-creds.prop"
        - echo "bot-sf-pass=1234_@_Ankita" >> "sf-creds.prop"
        - echo "bot-sf-host=frs.sourceforge.net" >> "sf-creds.prop"
-       - cd ..
+
+  Running the bot:
        - sudo chmod -R 0777 *
        - sudo java -jar Bobo.jar
