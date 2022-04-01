@@ -7,7 +7,7 @@ task:
   container:
       image: marvelmathesh/docker:rom
       cpu: 8
-      memory: 64G
+      memory: 32G
 
   Sync_script:
       - df -h
