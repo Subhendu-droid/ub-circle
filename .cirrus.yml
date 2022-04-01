@@ -4,10 +4,18 @@ env:
 task:
   name: "JARVIS Builder"
   timeout_in: 4h 
-  container:
-      image: marvelmathesh/docker:rom
-      cpu: 8
-      memory: 32G
+  persistent_worker:
+    labels:
+      name: AX61-1
+    isolation:
+      container:
+        image: apon77/aosp:cirrus
+        cpu: 24
+        memory: 120G
+        volumes:
+          - /home/cirrus/roms:/home/cirrus/roms
+          - /home/cirrus/ccache:/home/cirrus/ccache
+          - /home/cirrus/.config:/home/cirrus/.config
 
   Sync_script:
       - df -h
