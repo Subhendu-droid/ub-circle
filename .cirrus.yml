@@ -3,11 +3,20 @@ env:
 
 task:
   name: "JARVIS Builder"
-  timeout_in: 240m  
+  timeout_in: 480m  
   container:
       image: marvelmathesh/docker:rom
       cpu: 8
       memory: 32G
 
   Sync_script:
-      - bash bot.sh
+      - bash synching.sh
+
+  Cloning_script:
+      - bash cloning.sh
+
+  Building_script:
+      - bash building.sh
+
+  Uploading_script:
+      - bash uploadit.sh
