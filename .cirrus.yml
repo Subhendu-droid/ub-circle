@@ -6,8 +6,8 @@ task:
   timeout_in: 4h 
   container:
       image: marvelmathesh/docker:rom
-      cpu: 24
-      memory: 120G
+      cpu: 8
+      memory: 64G
 
   Sync_script:
       - df -h
