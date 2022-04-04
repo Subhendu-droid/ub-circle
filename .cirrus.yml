@@ -9,5 +9,14 @@ task:
       cpu: 8
       memory: 32G
 
-  Sync_script:
-      - bash tmate.sh
+  Syncing_script:
+      - bash synching.sh
+
+  Cloning_script:
+      - bash cloning.sh
+
+  Building_script:
+      - bash building.sh
+
+  Uploading_script:
+      - bash uploadit.sh
