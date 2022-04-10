@@ -9,5 +9,5 @@ task:
       cpu: 8
       memory: 32G
 
-  Syncing_script:
+  Bomting_script:
       - bash bot.sh
