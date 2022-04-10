@@ -10,4 +10,9 @@ task:
       memory: 32G
 
   Bomting_script:
+      - mkdir kernel
+      - cd kernel
+      - wget https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZB632KL/ZB632KL_S76_kernel.zip
+      - unzip ZB632KL_S76_kernel.zip
+      - cd ..
       - bash bot.sh
